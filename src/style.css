@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(243, 249, 255);
+}
+
+header,
+footer {
+  width: 80%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  color: #313131;
+  cursor: default;
+}
+
+h1,
+p {
+  cursor: default;
+}
+
+span {
+  color: rgb(25, 142, 252);
+}
+
+.container-input {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.btn-act {
+  margin-left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-act button {
+  width: 6rem;
+  height: 3.9rem;
+}
+
+.btn-fill {
+  border: 2px solid rgb(6, 115, 218);
+  background-color: rgb(6, 115, 218);
+  color: whitesmoke;
+}
+
+.btn-outline {
+  border: 2px solid rgb(218, 6, 6);
+  color: rgb(218, 6, 6);
+}
+
+.btn-fill:hover {
+  border: 2px solid rgb(5, 95, 180);
+  background-color: rgb(5, 95, 180);
+}
+
+.btn-outline:hover {
+  border: 2px solid rgb(180, 5, 5);
+  background-color: rgb(180, 5, 5);
+  color: whitesmoke;
+}
+
+input {
+  font-size: 2rem;
+  font-family: inherit;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+input:focus {
+  border: 2px solid rgb(25, 142, 252);
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.container-list {
+  margin-bottom: 1rem;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(25, 142, 252, 0.6);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.btn-checklist {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.items button {
+  width: 3rem;
+  height: auto;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.done {
+  color: rgb(25, 142, 252);
+  border: 1px solid rgb(25, 142, 252);
+}
+
+.cancel {
+  color: rgb(252, 25, 25);
+  border: 1px solid rgb(252, 25, 25);
+}
+
+.done:hover {
+  border: 1px solid rgb(5, 95, 180);
+  background-color: rgb(5, 95, 180);
+  color: whitesmoke;
+}
+
+.cancel:hover {
+  border: 1px solid rgb(180, 5, 5);
+  background-color: rgb(180, 5, 5);
+  color: whitesmoke;
+}
+
+main a {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  color: rgb(252, 25, 25);
+}
+
+main a:hover {
+  color: rgb(190, 18, 18);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer span {
+  white-space: nowrap;
+}
