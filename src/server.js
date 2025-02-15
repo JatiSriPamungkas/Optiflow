@@ -7,7 +7,7 @@ const app = express();
 
 const listsRoutes = require("./routes/lists");
 
-app.use(express.json());
+app.use(express.json()); // can use get, post, patch, delete and many more method
 
 app.use("/lists", listsRoutes);
 
