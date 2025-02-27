@@ -1,12 +1,22 @@
 const ListModels = require("../models/lists");
 
 // POST METHOD
-const createNewList = (req, res) => {
-  console.log(req.body);
-  res.json({
-    message: "POST LIST SUCCESSFULL",
-    data: req.body,
-  });
+const createNewList = async (req, res) => {
+  const { body } = req;
+  console.log(body);
+  try {
+    await ListModels.createNewList(body);
+
+    res.json({
+      message: "POST LIST SUCCESSFULL",
+      data: body,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Server Error",
+      serverMessage: error,
+    });
+  }
 };
 
 // GET METHOD

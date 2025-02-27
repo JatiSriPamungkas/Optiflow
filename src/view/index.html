@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Optiflow</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -12,10 +12,15 @@
     </header>
     <main>
       <div class="container-input">
-        <input type="text" placeholder="Hit Text" />
+        <input
+          id="task-input"
+          type="text"
+          placeholder="Hit Text"
+          autocomplete="off"
+        />
         <div class="btn-act">
-          <button class="btn-fill">Hit</button>
-          <button class="btn-outline">Erase</button>
+          <button id="add-task" class="btn-fill">Hit</button>
+          <button id="remove-text" class="btn-outline">Erase</button>
         </div>
       </div>
       <div class="container-list">
@@ -45,7 +50,7 @@
           </div>
         </div>
       </div>
-      <a href="#">🗑️ Throw All Away</a>
+      <a href="#" onclick="removeAll()">🗑️ Throw All Away</a>
     </main>
     <footer>
       <h1>
@@ -53,5 +58,7 @@
         <span>you get the luck.</span>
       </h1>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
